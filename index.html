@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bangladesh Bank</title>
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- customize css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container">
+        <!-- nav ber -->
+        <nav class="navbar bg-success fixed-top position-static">
+            <div class="container-fluid">
+
+                <div class="d-flex">
+                    <!-- drawer button -->
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- search ber -->
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <a class="btn btn-outline-warning" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+
+                </div>
+                <a class="navbar-brand" href="#">English</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <img class="w-100 mx-0" style="height: 180px;" src="images/bankbanner.jpg" alt="">
+
+        <!-- Menu ber -->
+        <div class="bg-success" style="margin-top:0;">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <!-- slider part -->
+        <section>
+            <div class="row justify-content-between bg-light">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide col-8 px-5 py-2 " data-bs-touch="true"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slide_img/bbweb_domain_eng.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide_img/bfiu_webnotice_nov2022.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide_img/fbfakenews_oct2022.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide_img/fepd_webnotice_sep2023.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide_img/nov092022_moneychanger_hp.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden ">Next</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <h5 class="bg-success text-light p-1">HONORABLE GOVERNOR</h5>
+                    <div class="row">
+                        <img class="col-5" src="images/abdurrouftalukder.jpg" alt="">
+                        <div class="col-5">
+                            <h5>MR. ABDUR ROUF TALUKDER</h5>
+                            <p class="text-sm">HONORABLE GOVERNOR OF BANGLADESH BANK</p>
+                            <p><a href="">more..</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Breaking News -->
+        <section class="mt-2 ">
+            <div class="row">
+                <div class="col-2">
+                    <h5 class="bg-success text-light p-2 text-center">RECENT NEWS</h5>
+                </div>
+                <div class="col bg-light">here will some News</div>
+            </div>
+        </section>
+        <!-- Cards and big column -->
+        <div class="row mt-5 justify-content-around">
+            <div class="col-9 p-2 border-end border-danger container">
+                <div class="row gap-3 justify-content-around">
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light col-5 p-4 border-top border-success shadow">
+                        <h4 class="border-start border-danger">MONETARY POLICY</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke-width="0.8" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group list-unstyled">
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">MPS (July-December 2023)</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Monetary Policy</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Banknotes & Coins</a></li>
+                                    <li>> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Repo Reverse Repo Auction</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-3 bg-light border-top border-dark p-3"> 
+                <div class="p-3 m-1 shadow">
+                    <h5 class="text-danger">ICT SECURITY ALERT</h5>
+                    <p><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">ICT Security Advisories & Alerts</a></p>
+                </div>
+                <div class="p-3 m-1 shadow">
+                    <h5 class="text-danger">CUSTOMERS' INTEREST PROTECTION CENTER(CIPC)</h5>
+                    <p class="text-success fw-bold">FOR ANY COMPLAINT</p>
+                    <h3 class="text-center"> Call:16236 </h3>
+                    <p class="text-center"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Email: bb.cipc@bb.org.bd</a></p>
+                    <p class="text-center">Download Mobile App</p>
+                    <p class="text-center">Submit online</p>
+                </div>
+                <div class="p-3 m-1 shadow">
+                    <h5 class="text-danger">CUSTOMERS' INTEREST PROTECTION CENTER(CIPC)</h5>
+                    <p class="text-success fw-bold">FOR ANY COMPLAINT</p>
+                    <h3 class="text-center"> Call:16236 </h3>
+                    <p class="text-center"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Email: bb.cipc@bb.org.bd</a></p>
+                    <p class="text-center">Download Mobile App</p>
+                    <p class="text-center">Submit online</p>
+                </div>
+                <div class="p-3 m-1 shadow">
+                    <h5 class="text-danger">CUSTOMERS' INTEREST PROTECTION CENTER(CIPC)</h5>
+                    <p class="text-success fw-bold">FOR ANY COMPLAINT</p>
+                    <h3 class="text-center"> Call:16236 </h3>
+                    <p class="text-center"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Email: bb.cipc@bb.org.bd</a></p>
+                    <p class="text-center">Download Mobile App</p>
+                    <p class="text-center">Submit online</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
